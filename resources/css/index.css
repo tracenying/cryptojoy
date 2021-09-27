@@ -74,7 +74,7 @@ body {
     padding: 13px 0 13px 0;
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (max-device-width:450px) {
     #cjmenu {
         position: absolute;
     }
@@ -285,10 +285,11 @@ h1 {
 #group1 .parallax__layer--landinglast img{
     width: 100%;
     bottom: 5%;
-    min-height: 1000px;
+    height: 100%;
     position: absolute;
     -webkit-animation: wave 5.11111s 0s infinite linear;
 }
+
 
 #group1 .parallax__layer--deep {
     background-image: url(../images/backland.png);
@@ -317,9 +318,20 @@ h1 {
 #group1 #balloon {
     position: relative;
     left: 120%;   
+    -webkit-animation: sway 4s 0.1s infinite alternate;
+        cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@media only screen and (max-device-width:450px) {
+
+#group1 #balloon {
+    position: relative;
+      left: 90%;  
 
     -webkit-animation: sway 4s 0.1s infinite alternate
         cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 }
 
 
