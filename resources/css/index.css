@@ -326,8 +326,8 @@ h1 {
 
 #group1 #balloon {
     position: relative;
-      left: 90%;  
-
+      left: 80%;  
+      top: 20%;
     -webkit-animation: sway 4s 0.1s infinite alternate
         cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
